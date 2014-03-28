@@ -3,7 +3,7 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 def fsum(c, a=1, b=2)
-	return c < b ? 0 : b%2==0 ? b + fsum(c, b, a+b) : fsum(c, b, a+b)
+	return c < b ? 0 : b.even? ? b + fsum(c, b, a+b) : fsum(c, b, a+b)
 end
 
 puts fsum(4E6)

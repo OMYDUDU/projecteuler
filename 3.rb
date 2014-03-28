@@ -3,9 +3,7 @@
 
 def isprime(a)
 	2.upto(a/2) do |i|
-		if a%i == 0
-			return false
-		end
+		return false if a%i == 0
 	end
 	return true
 end
@@ -13,7 +11,8 @@ end
 def lprime(b)
 	2.upto(b/2) do |i|
 		if b%i == 0
-			return b/i if isprime(b/i) 
+			b = b/i
+			return b if isprime(b) 
 		end
 	end
 end

@@ -12,7 +12,7 @@ def primelist(a)# e.g 10 => [2,5]; 8 => [2,2,2]; 3 => [3];
 	return [1] if a < 2
 	(a-1).downto(2) do |i|
 		if a%i == 0
-			return [] << primelist(i) << primelist(a/i)
+			return primelist(i) << primelist(a/i)
 		end
 	end
 	return [a]
