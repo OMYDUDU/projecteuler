@@ -1,5 +1,6 @@
 #Starting in the top left corner of a 2X2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
 
+
 tmp = Array.new(21){ [0]*21 }
 
 0.upto(20) do |i|
