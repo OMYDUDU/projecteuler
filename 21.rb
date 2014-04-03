@@ -13,7 +13,7 @@ def amicable(int)
 			array << int / x
 		end
 	end
-	return array.inject{ | sum, n| sum + n }
+	return array.uniq.inject{ | sum, n| sum + n }
 end
 
 array = []
