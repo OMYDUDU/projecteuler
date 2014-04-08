@@ -21,9 +21,7 @@ def cycle x
 		break if i % x == 0
 		array << i
 		i = (i % x) * 10
-		if ((array.include? i) && (i / x != 0))
-			return array.length - array.index(i)
-		end
+		return array.length - array.index(i) if array.include? i
 	end
 	return 0
 end

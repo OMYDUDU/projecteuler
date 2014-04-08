@@ -3,6 +3,7 @@
 #What is the largest prime factor of the number 600851475143 ?
 
 def isprime(a)
+	return 2 if a == 2
 	2.upto(Math.sqrt(a).to_i + 1) do |i|
 		return false if a%i == 0
 	end
