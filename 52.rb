@@ -15,11 +15,9 @@ find = false
 	min.upto(max) do |x|
 		if getdig(x) == getdig(2*x) && getdig(x) == getdig(3*x) && getdig(x) == getdig(4*x) && getdig(x) == getdig(5*x) && getdig(x) == getdig(6*x)
 			puts x
-			find = true
-			break
+			Process.exit(0)
 		end
 	end
-	break if find
 end
 
 #right

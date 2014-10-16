@@ -31,8 +31,8 @@ def max(a,b)
   return a > b ? a : b
 end
 res = 1
-0.upto(array.length - 1) do |x|
-  0.upto(array[x].length - 1) do |y|
+array.length.times do |x|
+  array[x].length.times do |y|
     if y < array[x].length - 3
       res = max(res, array[x][y] * array[x][y+1] * array[x][y+2] * array[x][y+3])
       if x < array.length - 3

@@ -14,7 +14,7 @@
 def write_list(list, array)
 	start = 1
 	start = list[array[-1] - 1] if list[array[-1] - 1] != 0
-	0.upto(array.length - 1) do |i| 
+	array.length.times do |i| 
 		if array[i] <1E6 && list[array[i] - 1] == 0
 			list[array[i] - 1] = array.length - i - 1 + start
 		end

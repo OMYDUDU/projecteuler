@@ -12,7 +12,8 @@ a, b, c = 285, 165, 143
 ta, tb, tc = 40755, 40755, 40755
 
 while true
-	min = tc < (ta < tb ? ta : tb) ? tc : (ta < tb ? ta : tb)
+	min = ta < tb ? ta : tb
+	min = tc if tc < min
 	if min == ta
 		a += 1
 		ta = a*(a+1)/2

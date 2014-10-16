@@ -22,11 +22,9 @@ find  = false
 		next if array[j]+array[i] < array[j+1]
 		if tmp[array[j]-array[i]] && tmp[array[j]+array[i]]
 			puts array[j]-array[i]
-			find = true
-			break
+			Process.exit(0)
 		end
 	end
-	break if find
 end
 
 #right
